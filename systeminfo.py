@@ -47,9 +47,14 @@ def get_info():
                 "Free": size_format(swap.free)
             }
         },
+        "Temperature": {},
         "Disk": {}
-
     }
+
+    sensors_temperatures = psutil.sensors_temperatures()
+    for name, entries in sensors_temperatures.items():
+        for entry in entries:
+            system_info["Temperature"][entry.label or name] = '%s °C' % entry.current
 
     for partition in psutil.disk_partitions():
         try:

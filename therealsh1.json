@@ -7,11 +7,11 @@
     },
     "CPU": {
         "name": "x86_64",
-        "Load (%)": 14.5,
+        "Load (%)": 5.4,
         "Logical CPU Count": 8,
         "CPU Count": 4,
         "CPU frequence (Ghz)": {
-            "Current": 2276,
+            "Current": 3136,
             "Min": 1400,
             "Max": 2100
         }
@@ -19,22 +19,29 @@
     "RAM": {
         "Memory": {
             "Total": "5.65Gb",
-            "Available": "1.31Gb",
-            "Load": "76.90",
-            "Used": "4.01Gb"
+            "Available": "889.73Mb",
+            "Load": "84.60",
+            "Used": "4.43Gb"
         },
         "Swap": {
             "Total": "2.00Gb",
-            "Used": "19.75Mb",
-            "Free": "1.98Gb"
+            "Used": "347.25Mb",
+            "Free": "1.66Gb"
         }
+    },
+    "Temperature": {
+        "acpitz": "65.0 °C",
+        "Composite": "40.85 °C",
+        "Sensor 1": "40.85 °C",
+        "Tctl": "66.5 °C",
+        "edge": "66.0 °C"
     },
     "Disk": {
         "/dev/nvme0n1p9": {
             "File system": "ext4",
             "Total": "96.38Gb",
-            "Used": "38.70Gb",
-            "Free": "52.75Gb",
+            "Used": "38.73Gb",
+            "Free": "52.73Gb",
             "Percent": "42.3"
         },
         "/dev/loop0": {
