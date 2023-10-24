@@ -1,6 +1,5 @@
 import json
 from platform import uname
-
 import psutil
 
 
@@ -28,7 +27,7 @@ def get_info():
             "Load (%)": psutil.cpu_percent(interval=1),
             "Logical CPU Count": psutil.cpu_count(),
             "CPU Count": psutil.cpu_count(logical=False),
-            "CPU frequence (Ghz)": {
+            "CPU frequency (Ghz)": {
                 "Current": int(cpu_freq.current),
                 "Min": int(cpu_freq.min),
                 "Max": int(cpu_freq.max)
@@ -47,14 +46,18 @@ def get_info():
                 "Free": size_format(swap.free)
             }
         },
-        "Temperature": {},
+        # "Temperature": {},
         "Disk": {}
     }
 
-    sensors_temperatures = psutil.sensors_temperatures()
-    for name, entries in sensors_temperatures.items():
-        for entry in entries:
-            system_info["Temperature"][entry.label or name] = '%s °C' % entry.current
+    if uname().system == "Linux":
+        system_info["Temperature"] = dict()
+        sensors_temperatures = psutil.sensors_temperatures()
+        for name, entries in sensors_temperatures.items():
+            for entry in entries:
+                system_info["Temperature"][entry.label or name] = '%s °C' % entry.current
+    else:
+        pass
 
     for partition in psutil.disk_partitions():
         try:

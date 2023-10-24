@@ -7,11 +7,11 @@
     },
     "CPU": {
         "name": "x86_64",
-        "Load (%)": 5.4,
+        "Load (%)": 16.1,
         "Logical CPU Count": 8,
         "CPU Count": 4,
         "CPU frequence (Ghz)": {
-            "Current": 3136,
+            "Current": 2706,
             "Min": 1400,
             "Max": 2100
         }
@@ -19,22 +19,15 @@
     "RAM": {
         "Memory": {
             "Total": "5.65Gb",
-            "Available": "889.73Mb",
-            "Load": "84.60",
-            "Used": "4.43Gb"
+            "Available": "2.90Gb",
+            "Load": "48.70",
+            "Used": "2.47Gb"
         },
         "Swap": {
             "Total": "2.00Gb",
-            "Used": "347.25Mb",
-            "Free": "1.66Gb"
+            "Used": "0.00",
+            "Free": "2.00Gb"
         }
-    },
-    "Temperature": {
-        "acpitz": "65.0 °C",
-        "Composite": "40.85 °C",
-        "Sensor 1": "40.85 °C",
-        "Tctl": "66.5 °C",
-        "edge": "66.0 °C"
     },
     "Disk": {
         "/dev/nvme0n1p9": {
@@ -123,71 +116,15 @@
         },
         "/dev/loop11": {
             "File system": "squashfs",
-            "Total": "238.88Mb",
-            "Used": "238.88Mb",
-            "Free": "0.00",
-            "Percent": "100.0"
-        },
-        "/dev/loop12": {
-            "File system": "squashfs",
             "Total": "237.25Mb",
             "Used": "237.25Mb",
             "Free": "0.00",
             "Percent": "100.0"
         },
-        "/dev/loop16": {
+        "/dev/loop12": {
             "File system": "squashfs",
-            "Total": "485.62Mb",
-            "Used": "485.62Mb",
-            "Free": "0.00",
-            "Percent": "100.0"
-        },
-        "/dev/loop23": {
-            "File system": "squashfs",
-            "Total": "40.88Mb",
-            "Used": "40.88Mb",
-            "Free": "0.00",
-            "Percent": "100.0"
-        },
-        "/dev/loop19": {
-            "File system": "squashfs",
-            "Total": "617.88Mb",
-            "Used": "617.88Mb",
-            "Free": "0.00",
-            "Percent": "100.0"
-        },
-        "/dev/loop18": {
-            "File system": "squashfs",
-            "Total": "497.00Mb",
-            "Used": "497.00Mb",
-            "Free": "0.00",
-            "Percent": "100.0"
-        },
-        "/dev/loop14": {
-            "File system": "squashfs",
-            "Total": "164.88Mb",
-            "Used": "164.88Mb",
-            "Free": "0.00",
-            "Percent": "100.0"
-        },
-        "/dev/loop24": {
-            "File system": "squashfs",
-            "Total": "512.00Kb",
-            "Used": "512.00Kb",
-            "Free": "0.00",
-            "Percent": "100.0"
-        },
-        "/dev/loop15": {
-            "File system": "squashfs",
-            "Total": "349.75Mb",
-            "Used": "349.75Mb",
-            "Free": "0.00",
-            "Percent": "100.0"
-        },
-        "/dev/loop22": {
-            "File system": "squashfs",
-            "Total": "40.88Mb",
-            "Used": "40.88Mb",
+            "Total": "238.88Mb",
+            "Used": "238.88Mb",
             "Free": "0.00",
             "Percent": "100.0"
         },
@@ -198,10 +135,52 @@
             "Free": "0.00",
             "Percent": "100.0"
         },
+        "/dev/loop14": {
+            "File system": "squashfs",
+            "Total": "164.88Mb",
+            "Used": "164.88Mb",
+            "Free": "0.00",
+            "Percent": "100.0"
+        },
+        "/dev/loop15": {
+            "File system": "squashfs",
+            "Total": "349.75Mb",
+            "Used": "349.75Mb",
+            "Free": "0.00",
+            "Percent": "100.0"
+        },
+        "/dev/loop16": {
+            "File system": "squashfs",
+            "Total": "485.62Mb",
+            "Used": "485.62Mb",
+            "Free": "0.00",
+            "Percent": "100.0"
+        },
         "/dev/loop17": {
+            "File system": "squashfs",
+            "Total": "497.00Mb",
+            "Used": "497.00Mb",
+            "Free": "0.00",
+            "Percent": "100.0"
+        },
+        "/dev/loop18": {
             "File system": "squashfs",
             "Total": "91.75Mb",
             "Used": "91.75Mb",
+            "Free": "0.00",
+            "Percent": "100.0"
+        },
+        "/dev/loop19": {
+            "File system": "squashfs",
+            "Total": "617.88Mb",
+            "Used": "617.88Mb",
+            "Free": "0.00",
+            "Percent": "100.0"
+        },
+        "/dev/loop20": {
+            "File system": "squashfs",
+            "Total": "618.00Mb",
+            "Used": "618.00Mb",
             "Free": "0.00",
             "Percent": "100.0"
         },
@@ -212,10 +191,24 @@
             "Free": "0.00",
             "Percent": "100.0"
         },
-        "/dev/loop20": {
+        "/dev/loop22": {
             "File system": "squashfs",
-            "Total": "618.00Mb",
-            "Used": "618.00Mb",
+            "Total": "40.88Mb",
+            "Used": "40.88Mb",
+            "Free": "0.00",
+            "Percent": "100.0"
+        },
+        "/dev/loop23": {
+            "File system": "squashfs",
+            "Total": "40.88Mb",
+            "Used": "40.88Mb",
+            "Free": "0.00",
+            "Percent": "100.0"
+        },
+        "/dev/loop24": {
+            "File system": "squashfs",
+            "Total": "512.00Kb",
+            "Used": "512.00Kb",
             "Free": "0.00",
             "Percent": "100.0"
         },
@@ -240,5 +233,12 @@
             "Free": "29.06Mb",
             "Percent": "69.7"
         }
+    },
+    "Temperature": {
+        "acpitz": "64.0 °C",
+        "Composite": "40.85 °C",
+        "Sensor 1": "40.85 °C",
+        "Tctl": "70.25 °C",
+        "edge": "70.0 °C"
     }
 }
